@@ -19,6 +19,11 @@
 			position: relative
 		}
 
+		.bee-button-content,
+		.bee-html-block {
+			text-align: center
+		}
+
 		.bee-row-1,
 		.bee-row-10,
 		.bee-row-15,
@@ -53,7 +58,6 @@
 		.bee-row-7 .bee-col-3 .bee-block-3 a,
 		.bee-row-7 .bee-col-3 .bee-block-5 a,
 		.bee-row-7 .bee-col-3 .bee-block-8 a,
-		.bee-row-9 .bee-col-2 .bee-block-1 a,
 		a {
 			color: #ffffff
 		}
@@ -90,11 +94,6 @@
 		.bee-button a,
 		.bee-menu ul li a {
 			text-decoration: none
-		}
-
-		.bee-button-content,
-		.bee-html-block {
-			text-align: center
 		}
 
 		.bee-divider,
@@ -227,6 +226,16 @@
 			text-align: center
 		}
 
+		.bee-row-7 .bee-col-2 .bee-block-2,
+		.bee-row-7 .bee-col-2 .bee-block-6,
+		.bee-row-7 .bee-col-3 .bee-block-2,
+		.bee-row-7 .bee-col-3 .bee-block-7 {
+			font-family: inherit;
+			padding-left: 10px;
+			color: #000000;
+			text-align: center
+		}
+
 		.bee-row-2 {
 			background-color: #ffffff;
 			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/9808a867-ee02-4927-8293-45d843fb0c15.png')
@@ -261,68 +270,48 @@
 		}
 
 		.bee-row-7 .bee-col-2 .bee-block-2 {
-			color: #000000;
-			font-family: inherit;
 			font-size: 20px;
 			letter-spacing: 6px;
-			padding-left: 10px;
-			padding-right: 10px;
-			text-align: center
+			padding-right: 10px
 		}
 
 		.bee-row-7 .bee-col-2 .bee-block-3,
 		.bee-row-7 .bee-col-2 .bee-block-7,
 		.bee-row-7 .bee-col-3 .bee-block-3,
-		.bee-row-7 .bee-col-3 .bee-block-5 {
+		.bee-row-7 .bee-col-3 .bee-block-5,
+		.bee-row-7 .bee-col-3 .bee-block-8 {
 			padding: 10px
 		}
 
 		.bee-row-7 .bee-col-2 .bee-block-6,
 		.bee-row-7 .bee-col-3 .bee-block-7 {
-			color: #000000;
-			font-family: inherit;
 			font-size: 14px;
-			padding-left: 10px;
-			padding-right: 10px;
-			text-align: center
+			padding-right: 10px
 		}
 
 		.bee-row-7 .bee-col-3 .bee-block-2 {
-			color: #000000;
-			font-family: inherit;
 			font-size: 17px;
-			padding-left: 10px;
-			padding-right: 35px;
-			text-align: center
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-3,
-		.bee-row-7 .bee-col-2 .bee-block-7,
-		.bee-row-7 .bee-col-3 .bee-block-3,
-		.bee-row-7 .bee-col-3 .bee-block-8 {
-			font-size: 18px;
-			text-align: center;
-			color: #4c2f29;
-			line-height: 120%
-		}
-
-		.bee-row-7 .bee-col-3 .bee-block-8 {
-			padding: 10px
+			padding-right: 35px
 		}
 
 		.bee-row-9 .bee-row-content {
-			background-image: url('https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/8l8z5x7d/itm/tx2/ap7/DL_kibblespread_bg.png');
+			background-image: url('https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/8l8z5x7d/nnl/ko3/x2h/DL_kibblespread_bg%20%281%29.png');
 			background-repeat: no-repeat;
 			color: #000000
 		}
 
-		.bee-row-11 .bee-col-2 .bee-block-2,
-		.bee-row-9 .bee-col-2 .bee-block-1 {
-			padding: 5px 10px 10px
+		.bee-row-9 .bee-col-1 .bee-block-1 {
+			padding: 10px;
+			text-align: center;
+			width: 100%
 		}
 
 		.bee-row-11 {
 			background-image: url('https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/8l8z5x7d/6q7/p4m/nts/987e9df8-f688-4b3b-a23e-6a3cb6d49e6c.png')
+		}
+
+		.bee-row-11 .bee-col-2 .bee-block-2 {
+			padding: 5px 10px 10px
 		}
 
 		.bee-row-12 {
@@ -351,6 +340,14 @@
 		}
 
 		@media (max-width:768px) {
+			img.bee-fullwidthOnMobile {
+				max-width: none !important
+			}
+
+			.bee-mobile_hide {
+				display: none
+			}
+
 			.bee-row-content:not(.no_stack) {
 				display: block
 			}
@@ -360,20 +357,23 @@
 			}
 		}
 
-		.bee-row-3 .bee-col-2 .bee-block-5 a {
-			background-color: #f6d126;
-			border-bottom: 1px solid transparent;
-			border-left: 1px solid transparent;
-			border-radius: 4px;
-			border-right: 1px solid transparent;
-			border-top: 1px solid transparent;
+		.bee-row-7 .bee-col-2 .bee-block-3,
+		.bee-row-7 .bee-col-2 .bee-block-7,
+		.bee-row-7 .bee-col-3 .bee-block-3,
+		.bee-row-7 .bee-col-3 .bee-block-8 {
 			color: #4c2f29;
-			direction: ltr;
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
-			font-size: 16px;
-			line-height: 200%;
-			padding: 5px 20px;
-			width: auto
+			font-size: 18px;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-11 .bee-col-2 .bee-block-2 p:not(:last-child),
+		.bee-row-7 .bee-col-2 .bee-block-3 p:not(:last-child),
+		.bee-row-7 .bee-col-2 .bee-block-7 p:not(:last-child),
+		.bee-row-7 .bee-col-3 .bee-block-3 p:not(:last-child),
+		.bee-row-7 .bee-col-3 .bee-block-5 p:not(:last-child),
+		.bee-row-7 .bee-col-3 .bee-block-8 p:not(:last-child) {
+			margin-bottom: undefined
 		}
 
 		.bee-row-7 .bee-col-2 .bee-block-2 .bee-icon-image,
@@ -394,25 +394,11 @@
 			margin-right: 0
 		}
 
-		.bee-row-11 .bee-col-2 .bee-block-2 p:not(:last-child),
-		.bee-row-7 .bee-col-2 .bee-block-3 p:not(:last-child),
-		.bee-row-7 .bee-col-2 .bee-block-7 p:not(:last-child),
-		.bee-row-7 .bee-col-3 .bee-block-3 p:not(:last-child),
-		.bee-row-7 .bee-col-3 .bee-block-5 p:not(:last-child),
-		.bee-row-7 .bee-col-3 .bee-block-8 p:not(:last-child),
-		.bee-row-9 .bee-col-2 .bee-block-1 p:not(:last-child) {
-			margin-bottom: undefined
-		}
-
 		.bee-row-7 .bee-col-2 .bee-block-6 .bee-icon::not(.bee-icon-last) .bee-content {
 			margin-right: 0
 		}
 
 		.bee-row-7 .bee-col-3 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-7 .bee-col-3 .bee-block-7 .bee-icon::not(.bee-icon-last) .bee-content {
 			margin-right: 0
 		}
 
@@ -423,18 +409,42 @@
 			text-align: center
 		}
 
+		.bee-row-7 .bee-col-3 .bee-block-7 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-5 a {
+			background-color: #f6d126;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-radius: 4px;
+			border-right: 1px solid transparent;
+			border-top: 1px solid transparent;
+			color: #4c2f29;
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 16px;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: auto
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-1 h1 {
+			color: #4c2f29;
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 38px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: center
+		}
+
 		.bee-row-11 .bee-col-2 .bee-block-2 {
 			color: #4c2f29;
 			font-size: 26px;
 			line-height: 120%;
 			text-align: right
-		}
-
-		.bee-row-9 .bee-col-2 .bee-block-1 {
-			color: #4c2f29;
-			font-size: 26px;
-			line-height: 120%;
-			text-align: center
 		}
 	</style>
 </head>
@@ -449,7 +459,7 @@
 <div class="bee-block bee-block-1 bee-html-block">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@700&display=swap" rel="stylesheet"/>
 </div>
-<div class="bee-block bee-block-2 bee-divider">
+<div class="bee-block bee-block-2 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:1px;"></div>
 </div>
 <div class="bee-block bee-block-3 bee-menu">
@@ -467,9 +477,9 @@
 <div class="bee-row bee-row-2">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-image"><img alt="Labor Day Pet Food Banner" class="bee-center bee-fixedwidth" src="images/ChatGPT_Image_May_25_2025_08_38_46_PM_2_2.png" style="max-width:576px;"/></div>
+<div class="bee-block bee-block-1 bee-image"><img alt="Labor Day Pet Food Banner" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="images/ChatGPT_Image_May_25_2025_08_38_46_PM_2_2.png" style="max-width:576px;"/></div>
 <div class="bee-block bee-block-2 bee-divider">
-<div class="spacer" style="height:5px;"></div>
+<div class="spacer" style="height:1px;"></div>
 </div>
 </div>
 </div>
@@ -477,7 +487,7 @@
 <div class="bee-row bee-row-3">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w6">
-<div class="bee-block bee-block-1 bee-image"><img alt="Hungry Cat Placeholder" class="bee-center bee-fixedwidth" src="images/ChatGPT_Image_May_25_2025_10_25_14_PM.png" style="max-width:540px;"/></div>
+<div class="bee-block bee-block-1 bee-image"><img alt="Hungry Cat Placeholder" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="images/ChatGPT_Image_May_25_2025_10_25_14_PM.png" style="max-width:540px;"/></div>
 </div>
 <div class="bee-col bee-col-2 bee-col-w6">
 <div class="bee-block bee-block-1 bee-divider">
@@ -593,7 +603,7 @@
 <div class="bee-row bee-row-4">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-divider">
+<div class="bee-block bee-block-1 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:160px;"></div>
 </div>
 </div>
@@ -630,8 +640,8 @@
 </div>
 </div>
 <div class="bee-col bee-col-2 bee-col-w6">
-<div class="bee-block bee-block-1 bee-image"><img alt="Pet Food Placeholder" class="bee-center bee-fixedwidth" src="images/ChatGPT_Image_May_25_2025_10_53_36_PM_1.png" style="max-width:540px;"/></div>
-<div class="bee-block bee-block-2 bee-divider">
+<div class="bee-block bee-block-1 bee-image"><img alt="Pet Food Placeholder" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="images/ChatGPT_Image_May_25_2025_10_53_36_PM_1.png" style="max-width:540px;"/></div>
+<div class="bee-block bee-block-2 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:50px;"></div>
 </div>
 </div>
@@ -640,7 +650,7 @@
 <div class="bee-row bee-row-6">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-divider">
+<div class="bee-block bee-block-1 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:50px;"></div>
 </div>
 </div>
@@ -649,10 +659,10 @@
 <div class="bee-row bee-row-7">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w6">
-<div class="bee-block bee-block-1 bee-spacer">
-<div class="spacer" style="height:300px;"></div>
+<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+<div class="spacer" style="height:350px;"></div>
 </div>
-<div class="bee-block bee-block-2 bee-image"><img alt="Bowl of Food Placeholder" class="bee-center bee-fixedwidth" src="images/ChatGPT_Image_May_26_2025_12_38_02_AM.png" style="max-width:504px;"/></div>
+<div class="bee-block bee-block-2 bee-image"><img alt="Bowl of Food Placeholder" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="images/ChatGPT_Image_May_26_2025_12_38_02_AM.png" style="max-width:504px;"/></div>
 </div>
 <div class="bee-col bee-col-2 bee-col-w3">
 <div class="bee-block bee-block-1 bee-divider">
@@ -790,7 +800,7 @@
 <div class="bee-row bee-row-8">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-divider">
+<div class="bee-block bee-block-1 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:50px;"></div>
 </div>
 </div>
@@ -799,13 +809,8 @@
 <div class="bee-row bee-row-9">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w3">
-<div class="bee-block bee-block-1 bee-divider">
-<div class="spacer" style="height:0px;"></div>
-</div>
-</div>
-<div class="bee-col bee-col-2 bee-col-w3">
-<div class="bee-block bee-block-1 bee-paragraph">
-<p style="word-break: break-word;"><span><strong>العصر الذهبي </strong></span></p>
+<div class="bee-block bee-block-1 bee-heading">
+<h1><strong>العصر الذهبي </strong> </h1>
 </div>
 <div class="bee-block bee-block-2 bee-html-block">
 <div style="max-width: 900px; margin: auto; padding: 20px;">
@@ -823,9 +828,17 @@
 </div>
 </div>
 </div>
+<div class="bee-block bee-block-3 bee-divider">
+<div class="spacer" style="height:0px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w3">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:60px;"></div>
+</div>
 </div>
 <div class="bee-col bee-col-3 bee-col-w6">
-<div class="bee-block bee-block-1 bee-image"><img alt="Dog Food Placeholder" class="bee-center bee-fixedwidth" src="images/ChatGPT_Image_May_26_2025_01_09_27_AM.png" style="max-width:432px;"/></div>
+<div class="bee-block bee-block-1 bee-image"><img alt="Dog Food Placeholder" class="bee-fixedwidth" src="images/ChatGPT_Image_May_26_2025_01_09_27_AM.png" style="max-width:432px;"/></div>
 </div>
 </div>
 </div>
@@ -887,7 +900,7 @@
 <div class="bee-block bee-block-1 bee-divider">
 <div class="spacer" style="height:30px;"></div>
 </div>
-<div class="bee-block bee-block-2 bee-spacer">
+<div class="bee-block bee-block-2 bee-spacer bee-mobile_hide">
 <div class="spacer" style="height:220px;"></div>
 </div>
 </div>
@@ -896,7 +909,7 @@
 <div class="bee-row bee-row-13">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w6">
-<div class="bee-block bee-block-1 bee-divider">
+<div class="bee-block bee-block-1 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:51px;"></div>
 </div>
 <div class="bee-block bee-block-2 bee-html-block">
@@ -925,7 +938,7 @@
 <div class="bee-row bee-row-14">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-divider">
+<div class="bee-block bee-block-1 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:193px;"></div>
 </div>
 </div>
@@ -968,7 +981,7 @@
 <div class="bee-row bee-row-16">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-divider">
+<div class="bee-block bee-block-1 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:50px;"></div>
 </div>
 </div>
@@ -977,7 +990,7 @@
 <div class="bee-row bee-row-17">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w3">
-<div class="bee-block bee-block-1 bee-spacer">
+<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
 <div class="spacer" style="height:60px;"></div>
 </div>
 </div>
@@ -1011,7 +1024,7 @@
 <div class="bee-row bee-row-18">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-divider">
+<div class="bee-block bee-block-1 bee-divider bee-mobile_hide">
 <div class="spacer" style="height:120px;"></div>
 </div>
 </div>
