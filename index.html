@@ -19,11 +19,6 @@
 			position: relative
 		}
 
-		.bee-button-content,
-		.bee-html-block {
-			text-align: center
-		}
-
 		.bee-row-1,
 		.bee-row-10,
 		.bee-row-15,
@@ -95,6 +90,11 @@
 		.bee-button a,
 		.bee-menu ul li a {
 			text-decoration: none
+		}
+
+		.bee-button-content,
+		.bee-html-block {
+			text-align: center
 		}
 
 		.bee-divider,
@@ -227,16 +227,6 @@
 			text-align: center
 		}
 
-		.bee-row-7 .bee-col-2 .bee-block-2,
-		.bee-row-7 .bee-col-2 .bee-block-6,
-		.bee-row-7 .bee-col-3 .bee-block-2,
-		.bee-row-7 .bee-col-3 .bee-block-7 {
-			font-family: inherit;
-			padding-left: 10px;
-			color: #000000;
-			text-align: center
-		}
-
 		.bee-row-2 {
 			background-color: #ffffff;
 			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/9808a867-ee02-4927-8293-45d843fb0c15.png')
@@ -271,28 +261,53 @@
 		}
 
 		.bee-row-7 .bee-col-2 .bee-block-2 {
+			color: #000000;
+			font-family: inherit;
 			font-size: 20px;
 			letter-spacing: 6px;
-			padding-right: 10px
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center
 		}
 
 		.bee-row-7 .bee-col-2 .bee-block-3,
 		.bee-row-7 .bee-col-2 .bee-block-7,
 		.bee-row-7 .bee-col-3 .bee-block-3,
-		.bee-row-7 .bee-col-3 .bee-block-5,
-		.bee-row-7 .bee-col-3 .bee-block-8 {
+		.bee-row-7 .bee-col-3 .bee-block-5 {
 			padding: 10px
 		}
 
 		.bee-row-7 .bee-col-2 .bee-block-6,
 		.bee-row-7 .bee-col-3 .bee-block-7 {
+			color: #000000;
+			font-family: inherit;
 			font-size: 14px;
-			padding-right: 10px
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center
 		}
 
 		.bee-row-7 .bee-col-3 .bee-block-2 {
+			color: #000000;
+			font-family: inherit;
 			font-size: 17px;
-			padding-right: 35px
+			padding-left: 10px;
+			padding-right: 35px;
+			text-align: center
+		}
+
+		.bee-row-7 .bee-col-2 .bee-block-3,
+		.bee-row-7 .bee-col-2 .bee-block-7,
+		.bee-row-7 .bee-col-3 .bee-block-3,
+		.bee-row-7 .bee-col-3 .bee-block-8 {
+			font-size: 18px;
+			text-align: center;
+			color: #4c2f29;
+			line-height: 120%
+		}
+
+		.bee-row-7 .bee-col-3 .bee-block-8 {
+			padding: 10px
 		}
 
 		.bee-row-9 .bee-row-content {
@@ -331,6 +346,20 @@
 			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/4fd1d138-feb1-4dac-859d-2365a8bd3989.png')
 		}
 
+		.bee-row-1 .bee-col-2 .bee-block-3 li {
+			padding: 5px 15px
+		}
+
+		@media (max-width:768px) {
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.bee-row-12 .bee-col-1 {
+				margin-bottom: 10px !important
+			}
+		}
+
 		.bee-row-3 .bee-col-2 .bee-block-5 a {
 			background-color: #f6d126;
 			border-bottom: 1px solid transparent;
@@ -365,16 +394,6 @@
 			margin-right: 0
 		}
 
-		.bee-row-7 .bee-col-2 .bee-block-3,
-		.bee-row-7 .bee-col-2 .bee-block-7,
-		.bee-row-7 .bee-col-3 .bee-block-3,
-		.bee-row-7 .bee-col-3 .bee-block-8 {
-			color: #4c2f29;
-			font-size: 18px;
-			line-height: 120%;
-			text-align: center
-		}
-
 		.bee-row-11 .bee-col-2 .bee-block-2 p:not(:last-child),
 		.bee-row-7 .bee-col-2 .bee-block-3 p:not(:last-child),
 		.bee-row-7 .bee-col-2 .bee-block-7 p:not(:last-child),
@@ -383,20 +402,6 @@
 		.bee-row-7 .bee-col-3 .bee-block-8 p:not(:last-child),
 		.bee-row-9 .bee-col-2 .bee-block-1 p:not(:last-child) {
 			margin-bottom: undefined
-		}
-
-		.bee-row-1 .bee-col-2 .bee-block-3 li {
-			padding: 5px 15px
-		}
-
-		@media (max-width:768px) {
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
-
-			.bee-row-12 .bee-col-1 {
-				margin-bottom: 10px !important
-			}
 		}
 
 		.bee-row-7 .bee-col-2 .bee-block-6 .bee-icon::not(.bee-icon-last) .bee-content {
@@ -418,18 +423,18 @@
 			text-align: center
 		}
 
-		.bee-row-9 .bee-col-2 .bee-block-1 {
-			color: #4c2f29;
-			font-size: 26px;
-			line-height: 120%;
-			text-align: center
-		}
-
 		.bee-row-11 .bee-col-2 .bee-block-2 {
 			color: #4c2f29;
 			font-size: 26px;
 			line-height: 120%;
 			text-align: right
+		}
+
+		.bee-row-9 .bee-col-2 .bee-block-1 {
+			color: #4c2f29;
+			font-size: 26px;
+			line-height: 120%;
+			text-align: center
 		}
 	</style>
 </head>
@@ -1020,7 +1025,7 @@
 <div class="spacer" style="height:20px;"></div>
 </div>
 <div class="bee-block bee-block-3 bee-social">
-<div class="content"><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.facebook.com" target="_self"><img alt="Facebook" src="images/facebook2x.png" title="facebook"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.twitter.com" target="_self"><img alt="Twitter" src="images/twitter2x.png" title="twitter"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.linkedin.com" target="_self"><img alt="Linkedin" src="images/linkedin2x.png" title="linkedin"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.instagram.com" target="_self"><img alt="Instagram" src="images/instagram2x.png" title="instagram"/></a></span></div>
+<div class="content"><span class="icon" style="padding:0 5px 0 5px;"><a href="https://x.com/asem_almoshrea" target="_self"><img alt="Twitter" src="images/twitter2x.png" title="twitter"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.linkedin.com/in/asem-almoshrea/" target="_self"><img alt="Linkedin" src="images/linkedin2x.png" title="linkedin"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.instagram.com/Asem.almoshrea" target="_self"><img alt="Instagram" src="images/instagram2x.png" title="instagram"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.youtube.com/@asemalmoshrea" target="_blank"><img alt="YouTube" src="images/youtube2x.png" title="YouTube"/></a></span></div>
 </div>
 </div>
 <div class="bee-col bee-col-2 bee-col-w3">
