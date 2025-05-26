@@ -2,7 +2,6 @@
 
 <html lang="">
 <head>
-  <meta name="viewport" content="width=1024">
 <title></title>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="website" property="og:type"/>
@@ -14,432 +13,50 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width" name="viewport"/>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
+
 <style>
-		.bee-row,
-		.bee-row-content {
-			position: relative
-		}
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
 
-		.bee-row-1,
-		.bee-row-10,
-		.bee-row-15,
-		.bee-row-16,
-		.bee-row-17,
-		.bee-row-2,
-		.bee-row-3,
-		.bee-row-4,
-		.bee-row-6,
-		.bee-row-7,
-		.bee-row-8,
-		.bee-row-9 {
-			background-repeat: no-repeat
-		}
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
 
-		.bee-row-2,
-		.bee-row-4,
-		.bee-row-5 {
-			background-position: top center
-		}
+  .bee-row-1 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #00a9c7;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-		body {
-			background-color: transparent;
-			color: #000000;
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif
-		}
+  .bee-row-1 .bee-row-content {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
 
-		.bee-row-1 .bee-col-2 .bee-block-3 li a,
-		.bee-row-11 .bee-col-2 .bee-block-2 a,
-		.bee-row-7 .bee-col-2 .bee-block-3 a,
-		.bee-row-7 .bee-col-2 .bee-block-7 a,
-		.bee-row-7 .bee-col-3 .bee-block-3 a,
-		.bee-row-7 .bee-col-3 .bee-block-5 a,
-		.bee-row-7 .bee-col-3 .bee-block-8 a,
-		.bee-row-9 .bee-col-2 .bee-block-1 a,
-		a {
-			color: #ffffff
-		}
+  .bee-row-1 .bee-block {
+    width: 100% !important;
+  }
 
-		* {
-			box-sizing: border-box
-		}
+  @media (max-width: 768px) {
+    .bee-row-1 {
+      width: 100% !important;
+    }
+  }
+</style>
 
-		body,
-		h1,
-		h2,
-		p {
-			margin: 0
-		}
-
-		.bee-row-content {
-			max-width: 1440px;
-			margin: 0 auto;
-			display: flex
-		}
-
-		.bee-row-content .bee-col-w3 {
-			flex-basis: 25%
-		}
-
-		.bee-row-content .bee-col-w6 {
-			flex-basis: 50%
-		}
-
-		.bee-row-content .bee-col-w12 {
-			flex-basis: 100%
-		}
-
-		.bee-button a,
-		.bee-menu ul li a {
-			text-decoration: none
-		}
-
-		.bee-button-content,
-		.bee-html-block {
-			text-align: center
-		}
-
-		.bee-divider,
-		.bee-image {
-			overflow: auto
-		}
-
-		.bee-divider .center,
-		.bee-image .bee-center {
-			margin: 0 auto
-		}
-
-		.bee-divider .right {
-			float: right
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-1,
-		.bee-row-11 .bee-col-1 .bee-block-1,
-		.bee-row-13 .bee-col-2 .bee-block-1,
-		.bee-row-15 .bee-col-1 .bee-block-1,
-		.bee-row-17 .bee-col-3 .bee-block-1,
-		.bee-row-19 .bee-col-1 .bee-block-1,
-		.bee-row-3 .bee-col-1 .bee-block-1,
-		.bee-row-5 .bee-col-2 .bee-block-1,
-		.bee-row-7 .bee-col-1 .bee-block-2,
-		.bee-row-9 .bee-col-3 .bee-block-1 {
-			width: 100%
-		}
-
-		.bee-icon {
-			display: inline-block;
-			vertical-align: middle
-		}
-
-		.bee-icon .bee-content {
-			display: flex;
-			align-items: center
-		}
-
-		.bee-image img {
-			display: block;
-			width: 100%
-		}
-
-		.bee-menu ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0
-		}
-
-		.bee-menu ul.bee-horizontal li {
-			display: inline-block
-		}
-
-		.bee-paragraph {
-			overflow-wrap: anywhere
-		}
-
-		.bee-social .icon img {
-			max-height: 32px
-		}
-
-		.bee-row-1 {
-  width: 100vw;
-  overflow: hidden;
-			background-color: #00a9c7
-		}
-
-		.bee-row-1 .bee-row-content,
-		.bee-row-10 .bee-row-content,
-		.bee-row-11 .bee-row-content,
-		.bee-row-12 .bee-row-content,
-		.bee-row-13 .bee-row-content,
-		.bee-row-14 .bee-row-content,
-		.bee-row-15 .bee-row-content,
-		.bee-row-16 .bee-row-content,
-		.bee-row-17 .bee-row-content,
-		.bee-row-18 .bee-row-content,
-		.bee-row-19 .bee-row-content,
-		.bee-row-2 .bee-row-content,
-		.bee-row-20 .bee-row-content,
-		.bee-row-3 .bee-row-content,
-		.bee-row-4 .bee-row-content,
-		.bee-row-5 .bee-row-content,
-		.bee-row-6 .bee-row-content,
-		.bee-row-7 .bee-row-content,
-		.bee-row-8 .bee-row-content {
-			background-repeat: no-repeat;
-			color: #000000
-		}
-
-		.bee-row-1 .bee-col-1,
-		.bee-row-1 .bee-col-2,
-		.bee-row-10 .bee-col-1,
-		.bee-row-11 .bee-col-1,
-		.bee-row-11 .bee-col-2,
-		.bee-row-11 .bee-col-3,
-		.bee-row-13 .bee-col-1,
-		.bee-row-13 .bee-col-2,
-		.bee-row-15 .bee-col-1,
-		.bee-row-15 .bee-col-2,
-		.bee-row-15 .bee-col-3,
-		.bee-row-16 .bee-col-1,
-		.bee-row-17 .bee-col-1,
-		.bee-row-17 .bee-col-2,
-		.bee-row-17 .bee-col-3,
-		.bee-row-18 .bee-col-1,
-		.bee-row-19 .bee-col-1,
-		.bee-row-19 .bee-col-2,
-		.bee-row-19 .bee-col-3,
-		.bee-row-19 .bee-col-4,
-		.bee-row-2 .bee-col-1,
-		.bee-row-20 .bee-col-1,
-		.bee-row-3 .bee-col-2,
-		.bee-row-6 .bee-col-1,
-		.bee-row-8 .bee-col-1,
-		.bee-row-9 .bee-col-1,
-		.bee-row-9 .bee-col-2,
-		.bee-row-9 .bee-col-3 {
-			padding-bottom: 5px;
-			padding-top: 5px
-		}
-
-		.bee-row-1 .bee-col-2 .bee-block-2 {
-			padding: 20px
-		}
-
-		.bee-row-1 .bee-col-2 .bee-block-3 {
-			color: #ffffff;
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
-			font-size: 16px;
-			text-align: center
-		}
-
-		.bee-row-2 {
-			background-color: #ffffff;
-			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/9808a867-ee02-4927-8293-45d843fb0c15.png')
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-1 {
-			padding-bottom: 60px;
-			padding-right: 27px;
-			padding-top: 27px;
-			width: 100%
-		}
-
-		.bee-row-19 .bee-col-1 .bee-block-3,
-		.bee-row-3 .bee-col-2 .bee-block-5 {
-			padding: 10px;
-			text-align: center
-		}
-
-		.bee-row-4 {
-			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/ae5948b9-40b3-46ad-997c-8b2236eb7f72.png')
-		}
-
-		.bee-row-5 {
-			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/LD_yellowave_bg_2.png');
-			background-repeat: no-repeat
-		}
-
-		.bee-row-11,
-		.bee-row-18 {
-			background-position: center top;
-			background-repeat: no-repeat
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-2 {
-			color: #000000;
-			font-family: inherit;
-			font-size: 20px;
-			letter-spacing: 6px;
-			padding-left: 10px;
-			padding-right: 10px;
-			text-align: center
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-3,
-		.bee-row-7 .bee-col-2 .bee-block-7,
-		.bee-row-7 .bee-col-3 .bee-block-3,
-		.bee-row-7 .bee-col-3 .bee-block-5 {
-			padding: 10px
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-6,
-		.bee-row-7 .bee-col-3 .bee-block-7 {
-			color: #000000;
-			font-family: inherit;
-			font-size: 14px;
-			padding-left: 10px;
-			padding-right: 10px;
-			text-align: center
-		}
-
-		.bee-row-7 .bee-col-3 .bee-block-2 {
-			color: #000000;
-			font-family: inherit;
-			font-size: 17px;
-			padding-left: 10px;
-			padding-right: 35px;
-			text-align: center
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-3,
-		.bee-row-7 .bee-col-2 .bee-block-7,
-		.bee-row-7 .bee-col-3 .bee-block-3,
-		.bee-row-7 .bee-col-3 .bee-block-8 {
-			font-size: 18px;
-			text-align: center;
-			color: #4c2f29;
-			line-height: 120%
-		}
-
-		.bee-row-7 .bee-col-3 .bee-block-8 {
-			padding: 10px
-		}
-
-		.bee-row-9 .bee-row-content {
-			background-image: url('https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/8l8z5x7d/itm/tx2/ap7/DL_kibblespread_bg.png');
-			background-repeat: no-repeat;
-			color: #000000
-		}
-
-		.bee-row-11 .bee-col-2 .bee-block-2,
-		.bee-row-9 .bee-col-2 .bee-block-1 {
-			padding: 5px 10px 10px
-		}
-
-		.bee-row-11 {
-			background-image: url('https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/8l8z5x7d/6q7/p4m/nts/987e9df8-f688-4b3b-a23e-6a3cb6d49e6c.png')
-		}
-
-		.bee-row-12 {
-			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/LD_bluewave3_bot.png');
-			background-repeat: no-repeat
-		}
-
-		.bee-row-13,
-		.bee-row-19,
-		.bee-row-20 {
-			background-color: #00b5d5;
-			background-repeat: no-repeat
-		}
-
-		.bee-row-14 {
-			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/LD_bluewave3_bot_3.png');
-			background-repeat: no-repeat
-		}
-
-		.bee-row-18 {
-			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/2401/4fd1d138-feb1-4dac-859d-2365a8bd3989.png')
-		}
-
-		.bee-row-1 .bee-col-2 .bee-block-3 li {
-			padding: 5px 15px
-		}
-
-		@media (max-width:768px) {
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
-
-			.bee-row-12 .bee-col-1 {
-				margin-bottom: 10px !important
-			}
-		}
-
-		.bee-row-3 .bee-col-2 .bee-block-5 a {
-			background-color: #f6d126;
-			border-bottom: 1px solid transparent;
-			border-left: 1px solid transparent;
-			border-radius: 4px;
-			border-right: 1px solid transparent;
-			border-top: 1px solid transparent;
-			color: #4c2f29;
-			direction: ltr;
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
-			font-size: 16px;
-			line-height: 200%;
-			padding: 5px 20px;
-			width: auto
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-2 .bee-icon-image,
-		.bee-row-7 .bee-col-2 .bee-block-6 .bee-icon-image,
-		.bee-row-7 .bee-col-3 .bee-block-2 .bee-icon-image,
-		.bee-row-7 .bee-col-3 .bee-block-7 .bee-icon-image {
-			padding: 5px
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-2 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-7 .bee-col-2 .bee-block-6 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-7 .bee-col-3 .bee-block-2 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-7 .bee-col-3 .bee-block-7 .bee-icon:not(.bee-icon-first) .bee-content {
-			margin-left: 0
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-11 .bee-col-2 .bee-block-2 p:not(:last-child),
-		.bee-row-7 .bee-col-2 .bee-block-3 p:not(:last-child),
-		.bee-row-7 .bee-col-2 .bee-block-7 p:not(:last-child),
-		.bee-row-7 .bee-col-3 .bee-block-3 p:not(:last-child),
-		.bee-row-7 .bee-col-3 .bee-block-5 p:not(:last-child),
-		.bee-row-7 .bee-col-3 .bee-block-8 p:not(:last-child),
-		.bee-row-9 .bee-col-2 .bee-block-1 p:not(:last-child) {
-			margin-bottom: undefined
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-6 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-7 .bee-col-3 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-7 .bee-col-3 .bee-block-7 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-7 .bee-col-3 .bee-block-5 {
-			color: #4c2f29;
-			font-size: 16px;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-11 .bee-col-2 .bee-block-2 {
-			color: #4c2f29;
-			font-size: 26px;
-			line-height: 120%;
-			text-align: right
-		}
-
-		.bee-row-9 .bee-col-2 .bee-block-1 {
-			color: #4c2f29;
-			font-size: 26px;
-			line-height: 120%;
-			text-align: center
-		}
-	</style>
 </head>
 <body>
 <div class="bee-page-container">
@@ -1028,7 +645,7 @@
 <div class="spacer" style="height:20px;"></div>
 </div>
 <div class="bee-block bee-block-3 bee-social">
-<div class="content"><span class="icon" style="padding:0 5px 0 5px;"><a href="https://x.com/asem_almoshrea" target="_self"><img alt="Twitter" src="images/twitter2x.png" title="twitter"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.linkedin.com/in/asem-almoshrea/" target="_self"><img alt="Linkedin" src="images/linkedin2x.png" title="linkedin"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.instagram.com/Asem.almoshrea" target="_self"><img alt="Instagram" src="images/instagram2x.png" title="instagram"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.youtube.com/@asemalmoshrea" target="_blank"><img alt="YouTube" src="images/youtube2x.png" title="YouTube"/></a></span></div>
+<div class="content"><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.facebook.com" target="_self"><img alt="Facebook" src="images/facebook2x.png" title="facebook"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.twitter.com" target="_self"><img alt="Twitter" src="images/twitter2x.png" title="twitter"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.linkedin.com" target="_self"><img alt="Linkedin" src="images/linkedin2x.png" title="linkedin"/></a></span><span class="icon" style="padding:0 5px 0 5px;"><a href="https://www.instagram.com" target="_self"><img alt="Instagram" src="images/instagram2x.png" title="instagram"/></a></span></div>
 </div>
 </div>
 <div class="bee-col bee-col-2 bee-col-w3">
